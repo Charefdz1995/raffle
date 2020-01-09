@@ -22,3 +22,6 @@ class raffle(models.Model):
     raffle_time = models.DateTimeField()
     raffle_winner = models.ForeignKey(customer,on_delete = models.CASCADE)
 
+    def getWinner(self):
+        pass
+
